@@ -1,0 +1,32 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95px; 
+  overflow-y: hidden;
+  background-color: #f4efef;
+  z-index: 1000;
+
+}
+.navbar .logo{
+  /* width: max(10%,80px); */
+  width: 110px;
+    height: 100px;
+}
+.navbar .profile{
+  width: 40px;
+}
+.navbar .logout-btn{
+  border-radius: 15px;
+  border: none;
+  background-color: #EB5B00;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  font-size: 17px;
+}
