@@ -3,8 +3,8 @@ export const connectDB = async () => {
   await mongoose
 
     .connect(
-      // project name--> FinalYearProject in mongodb atlas and the cluster-> FoodOrder, database-> foodorderdb, collection->foods
-      "mongodb+srv://mansi111:mansi_647@foodorder.tlwgu.mongodb.net/foodorderDB?retryWrites=true&w=majority"
+      // mongodb connection url
+      ""
     )
     .then(() => {
       console.log("DB Connected.");
