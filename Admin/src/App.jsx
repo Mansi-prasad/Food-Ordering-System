@@ -62,6 +62,3 @@ const App = () => {
 };
 export default App;
 
-//install axios that create n/w request like get post
-//install react-toastify create toast notification easily
-//install react-router-dom
