@@ -1,8 +1,6 @@
 import orderModel from "../models/orderModel.js";
 import userModel from "../models/userModel.js";
 
-//Stripe Node library provides convenient access to the Stripe API from applications written in server-side JavaScript.
-//Collecting customer and payment information
 import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
