@@ -131,7 +131,7 @@ export const LoginPopUp = ({ setShowLogin }) => {
             <span onClick={() => setCurrState("Login")}>Login here</span>
           </p>
         )}
-        {/* <button onClick={()=>toast.success("hello")}>toast</button> */}
+        
       </form>
     </div>
   );
