@@ -15,13 +15,9 @@ export const LoginPopUp = ({ setShowLogin }) => {
     const value = e.target.value;
     setData((data) => ({ ...data, [name]: value }));
   };
-
-  const notify = () => toast("Wow so easy!");
-
   const onLogin = async (e) => {
     // to prevent the page reload after login/submitting data.
     e.preventDefault();
-    console.log("onLogin function executed!");
     //make the api call
     let newUrl = url;
     if (currState === "Login") {
@@ -45,8 +41,8 @@ export const LoginPopUp = ({ setShowLogin }) => {
         );
       }
     } catch (error) {
-      console.log("Full Error Object:", error);
-      console.log("Axios Error Response:", error.response);
+      //console.log("Full Error Object:", error);
+      //console.log("Axios Error Response:", error.response);
       console.log("Axios Error:", error.response.data.message);
 
       if (error.response && error.response.data) {
