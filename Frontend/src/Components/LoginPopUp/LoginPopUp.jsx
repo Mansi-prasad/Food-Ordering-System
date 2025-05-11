@@ -5,8 +5,6 @@ import { StoreContext } from "../context/StoreContext";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 
-// import { Toaster, toast } from 'sonner';
-
 export const LoginPopUp = ({ setShowLogin }) => {
   const { url, token, setToken } = useContext(StoreContext);
   const [currState, setCurrState] = useState("Login");
@@ -26,8 +24,6 @@ export const LoginPopUp = ({ setShowLogin }) => {
     console.log("onLogin function executed!");
     //make the api call
     let newUrl = url;
-    // console.log(currS);
-
     if (currState === "Login") {
       newUrl += "/api/user/login";
     } else {
