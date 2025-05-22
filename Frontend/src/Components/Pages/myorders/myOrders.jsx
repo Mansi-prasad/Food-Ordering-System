@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { StoreContext } from "../../context/StoreContext";
 // import { assets } from "../../assets/FrontEnd/assets";
 import { assets } from "../../../assets/FrontEnd/assets";
-import "./myOrders.css";
+import "./myorders.css";
 import axios from "axios";
 export const MyOrders = () => {
   const [data, setData] = useState([]);
